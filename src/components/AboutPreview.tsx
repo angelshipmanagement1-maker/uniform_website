@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, Users, Award, Truck } from 'lucide-react';
+import { getImagePath } from '../utils/imageUtils';
 
 const AboutPreview: React.FC = () => {
   const stats = [
@@ -19,24 +20,24 @@ const AboutPreview: React.FC = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <img
-                  src="/chef_uniforms.jpg"
+                  src={getImagePath('chef_uniforms.jpg')}
                   alt="Housekeeping uniforms"
                   className="w-full h-48 object-cover rounded-lg shadow-lg"
                 />
                 <img
-                  src="/workers_belts.webp"
+                  src={getImagePath('workers_belts.webp')}
                   alt="Kitchen staff uniforms"
                   className="w-full h-32 object-cover rounded-lg shadow-lg"
                 />
               </div>
               <div className="space-y-4 pt-8">
                 <img
-                  src="/maintence_worker_uniform2.avif"
+                  src={getImagePath('maintence_worker_uniform2.avif')}
                   alt="Security guard uniforms"
                   className="w-full h-32 object-cover rounded-lg shadow-lg"
                 />
                 <img
-                  src="/security_guard_uniform1.avif"
+                  src={getImagePath('security_guard_uniform1.avif')}
                   alt="Industrial uniforms"
                   className="w-full h-48 object-cover rounded-lg shadow-lg"
                 />

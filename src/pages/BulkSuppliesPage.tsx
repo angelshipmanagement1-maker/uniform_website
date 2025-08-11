@@ -1,5 +1,6 @@
 import React from 'react';
 import { MessageCircle, Package, FileText, Brush, Droplets, CheckCircle } from 'lucide-react';
+import { getImagePath } from '../utils/imageUtils';
 
 const BulkSuppliesPage: React.FC = () => {
   const supplyCategories = [
@@ -8,7 +9,7 @@ const BulkSuppliesPage: React.FC = () => {
       title: 'Stationery Supplies',
       icon: FileText,
       description: 'Complete range of office stationery and supplies for smooth business operations. From basic writing materials to specialized office equipment.',
-      image: '/chef_uniforms.jpg',
+      image: getImagePath('chef_uniforms.jpg'),
       subcategories: [
         {
           name: 'Writing Materials',
@@ -33,7 +34,7 @@ const BulkSuppliesPage: React.FC = () => {
       title: 'Housekeeping Equipment',
       icon: Brush,
       description: 'Professional-grade cleaning tools and equipment for maintaining cleanliness and hygiene in commercial and residential spaces.',
-      image: '/workers_belts.webp',
+      image: getImagePath('workers_belts.webp'),
       subcategories: [
         {
           name: 'Cleaning Tools',
@@ -58,7 +59,7 @@ const BulkSuppliesPage: React.FC = () => {
       title: 'Cleaning Materials',
       icon: Droplets,
       description: 'Industrial-strength cleaning agents and chemicals for effective sanitation and maintenance across various environments.',
-      image: '/cap1.jpeg',
+      image: getImagePath('cap1.jpeg'),
       subcategories: [
         {
           name: 'Floor Care',

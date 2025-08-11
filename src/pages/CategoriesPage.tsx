@@ -1,5 +1,6 @@
 import React from 'react';
 import { MessageCircle, CheckCircle } from 'lucide-react';
+import { getImagePath } from '../utils/imageUtils';
 
 const CategoriesPage: React.FC = () => {
   const categories = [
@@ -7,8 +8,8 @@ const CategoriesPage: React.FC = () => {
       id: 1,
       title: 'Housekeeping Uniforms',
       description: 'Smart, functional, and comfortable uniforms designed for all-day wear in hospitality and corporate environments. Our housekeeping uniforms combine professional appearance with practical functionality.',
-      image1: '/housekeeping-staff-uniform.jpg',
-      image2: '/HOUSEKEEPING2.jpg',
+      image1: getImagePath('housekeeping-staff-uniform.jpg'),
+      image2: getImagePath('HOUSEKEEPING2.jpg'),
       features: ['Lightweight, breathable fabric', 'Stain and wrinkle resistant', 'Multiple color options', 'Custom logo embroidery', 'Easy care and maintenance', 'Comfortable fit for long shifts'],
       industries: ['Hotels & Resorts', 'Corporate Offices', 'Hospitals', 'Educational Institutions']
     },
@@ -16,8 +17,8 @@ const CategoriesPage: React.FC = () => {
       id: 2,
       title: 'Maintenance Workers Uniforms',
       description: 'Durable workwear engineered to withstand demanding conditions while maintaining professional appearance. Built for maintenance professionals who need reliable, long-lasting uniforms.',
-      image1: '/maintence_worker_uniform2.avif',
-      image2: '/maintenceworkeruniform1.avif',
+      image1: getImagePath('maintence_worker_uniform2.avif'),
+      image2: getImagePath('maintenceworkeruniform1.avif'),
       features: ['Heavy-duty fabric construction', 'Reinforced stitching at stress points', 'Multiple utility pockets', 'Tool loops and attachments', 'Oil and grease resistant', 'Available in safety colors'],
       industries: ['Manufacturing Plants', 'Facility Management', 'Construction Sites', 'Technical Services']
     },
@@ -25,8 +26,8 @@ const CategoriesPage: React.FC = () => {
       id: 3,
       title: 'Safety Guide Uniforms',
       description: 'High-visibility protective wear designed for safety-critical environments. Our safety uniforms meet industry standards while ensuring maximum comfort and mobility for safety personnel.',
-      image1: '/saftey_guide_uniuform1.jpg',
-      image2: '/saftey_guide_uniuform2.jpg',
+      image1: getImagePath('saftey_guide_uniuform1.jpg'),
+      image2: getImagePath('saftey_guide_uniuform2.jpg'),
       features: ['High-visibility reflective strips', 'Compliance with safety standards', 'Weather-resistant materials', 'Breathable fabric technology', 'Adjustable fit options', 'Flame-retardant options available'],
       industries: ['Construction', 'Mining', 'Traffic Control', 'Industrial Safety']
     },
@@ -34,8 +35,8 @@ const CategoriesPage: React.FC = () => {
       id: 4,
       title: 'Security Guard Uniforms',
       description: 'Authoritative and professional uniforms that project confidence and security. Designed for comfort during long shifts while maintaining a sharp, professional appearance that commands respect.',
-      image1: '/security_guard_uniform1.avif',
-      image2: '/security_guard_uniform2.avif',
+      image1: getImagePath('security_guard_uniform1.avif'),
+      image2: getImagePath('security_guard_uniform2.avif'),
       features: ['Smart, authoritative design', 'Durable fabric for daily wear', 'Professional tailoring', 'Badge and insignia placement', 'Multiple pocket configurations', 'Weather-appropriate options'],
       industries: ['Corporate Security', 'Residential Complexes', 'Shopping Malls', 'Event Security']
     },
@@ -43,8 +44,8 @@ const CategoriesPage: React.FC = () => {
       id: 5,
       title: 'Customized Belts & Caps',
       description: 'Professional accessories that complete your teams uniform look. Custom-designed belts and caps with your company branding, available in various materials and styles to match your brand identity.',
-      image1: '/workers_belts.webp',
-      image2: '/cap1.jpeg',
+      image1: getImagePath('workers_belts.webp'),
+      image2: getImagePath('cap1.jpeg'),
       features: ['Custom logo embroidery/printing', 'Adjustable sizing options', 'Premium material choices', 'Color coordination with uniforms', 'Durable hardware', 'Professional finishing'],
       industries: ['All Industries', 'Corporate Branding', 'Promotional Items', 'Team Accessories']
     },
@@ -52,8 +53,8 @@ const CategoriesPage: React.FC = () => {
       id: 6,
       title: 'Kitchen Staff Uniforms & Aprons',
       description: 'Heat-resistant, hygienic uniforms designed for culinary professionals. Our kitchen wear combines functionality with style, ensuring chefs and kitchen staff look professional while staying comfortable in demanding environments.',
-      image1: '/chef_uniforms.jpg',
-      image2: '/waiter_uniform.webp',
+      image1: getImagePath('chef_uniforms.jpg'),
+      image2: getImagePath('waiter_uniform.webp'),
       features: ['Heat and stain resistant fabric', 'Easy-to-clean materials', 'Professional chef styling', 'Multiple apron styles', 'Breathable comfort design', 'Custom embroidery options'],
       industries: ['Restaurants', 'Hotels', 'Catering Services', 'Food Processing']
     }

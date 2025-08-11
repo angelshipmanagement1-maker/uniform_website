@@ -1,5 +1,6 @@
 import React from 'react';
 import { MessageCircle } from 'lucide-react';
+import { getImagePath } from '../utils/imageUtils';
 
 const QuickCategories: React.FC = () => {
   const categories = [
@@ -7,48 +8,48 @@ const QuickCategories: React.FC = () => {
       id: 1,
       title: 'Housekeeping Uniforms',
       description: 'Smart, functional, and comfortable uniforms designed for all-day wear. Crafted from breathable fabrics with easy maintenance.',
-      image1: '/housekeeping-staff-uniform.jpg',
-      image2: '/HOUSEKEEPING2.jpg',
+      image1: getImagePath('housekeeping-staff-uniform.jpg'),
+      image2: getImagePath('HOUSEKEEPING2.jpg'),
       features: ['Lightweight fabric', 'Stain-resistant', 'Customizable colors & logos']
     },
     {
       id: 2,
       title: 'Maintenance Workers Uniforms',
       description: 'Durable workwear built to handle tough jobs. Combines strength, safety, and comfort for professional maintenance teams.',
-      image1: '/maintence_worker_uniform2.avif',
-      image2: '/maintenceworkeruniform1.avif',
+      image1: getImagePath('maintence_worker_uniform2.avif'),
+      image2: getImagePath('maintenceworkeruniform1.avif'),
       features: ['Reinforced stitching', 'Multiple utility pockets', 'Customizable fits']
     },
     {
       id: 3,
       title: 'Safety Guide Uniforms',
       description: 'High-visibility and protective gear for safety-critical environments. Designed to meet safety standards while ensuring comfort.',
-      image1: '/saftey_guide_uniuform1.jpg',
-      image2: '/saftey_guide_uniuform2.jpg',
+      image1: getImagePath('saftey_guide_uniuform1.jpg'),
+      image2: getImagePath('saftey_guide_uniuform2.jpg'),
       features: ['Reflective strips', 'Breathable fabric', 'Weather-resistant options']
     },
     {
       id: 4,
       title: 'Security Guard Uniforms',
       description: 'Authoritative and comfortable uniforms made to project confidence and ensure mobility for security professionals.',
-      image1: '/security_guard_uniform1.avif',
-      image2: '/security_guard_uniform2.avif',
+      image1: getImagePath('security_guard_uniform1.avif'),
+      image2: getImagePath('security_guard_uniform2.avif'),
       features: ['Strong fabric', 'Crisp tailoring', 'Shoulder epaulettes & caps']
     },
     {
       id: 5,
       title: 'Customized Belts & Caps',
       description: 'Personalized accessories to complete your teams look. Customizable with company branding in various materials and styles.',
-      image1: '/workers_belts.webp',
-      image2: '/cap1.jpeg',
+      image1: getImagePath('workers_belts.webp'),
+      image2: getImagePath('cap1.jpeg'),
       features: ['Adjustable sizes', 'Embroidered or printed logos', 'Durable materials']
     },
     {
       id: 6,
       title: 'Kitchen Staff Uniforms & Aprons',
       description: 'Heat-resistant, easy-to-clean uniforms for chefs and kitchen staff. Designed to handle busy kitchens while maintaining professional look.',
-      image1: '/chef_uniforms.jpg',
-      image2: '/waiter_uniform.webp',
+      image1: getImagePath('chef_uniforms.jpg'),
+      image2: getImagePath('waiter_uniform.webp'),
       features: ['Breathable fabric', 'Multiple pocket options', 'Apron customization']
     }
   ];

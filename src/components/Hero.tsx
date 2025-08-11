@@ -1,27 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import { MessageCircle, ChevronLeft, ChevronRight } from 'lucide-react';
+import { getImagePath } from '../utils/imageUtils';
 
 const Hero: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   
   const slides = [
     {
-      image: '/chef_uniforms.jpg',
+      image: getImagePath('chef_uniforms.jpg'),
       title: 'Premium Housekeeping Uniforms',
       subtitle: 'Professional uniforms for hospitality and corporate facilities'
     },
     {
-      image: '/maintence_worker_uniform2.avif',
+      image: getImagePath('maintence_worker_uniform2.avif'),
       title: 'Security Guard Uniforms',
       subtitle: 'Authoritative and comfortable uniforms for security professionals'
     },
     {
-      image: '/workers_belts.webp',
+      image: getImagePath('workers_belts.webp'),
       title: 'Kitchen Staff & Chef Uniforms',
       subtitle: 'Heat-resistant, professional kitchen wear and aprons'
     },
     {
-      image: '/security_guard_uniform1.avif',
+      image: getImagePath('security_guard_uniform1.avif'),
       title: 'Industrial & Safety Uniforms',
       subtitle: 'Durable workwear for factory and industrial workers'
     }
