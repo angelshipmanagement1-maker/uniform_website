@@ -60,7 +60,26 @@ npm run dev
 npm run build
 ```
 
+For GitHub Pages deployment:
+```bash
+npm run build:github
+```
+
 The built files will be in the `dist` directory.
+
+## 🚀 Deployment
+
+### GitHub Pages (Automatic)
+The website is automatically deployed to GitHub Pages using GitHub Actions when you push to the master branch.
+
+**Live URL**: https://angelshipmanagement1-maker.github.io/uniform_website/
+
+### Manual Deployment
+1. Build the project: `npm run build:github`
+2. Deploy the `dist` folder to your hosting provider
+
+### Environment Variables
+- `VITE_BASE_PATH`: Set custom base path for deployment (default: `/uniform_website/`)
 
 ## 📱 Contact Information
 
